@@ -5,7 +5,7 @@
 }
 
 .paragraph {
-  color: #666;
+  color: #555;
   font-family: 'Noto Serif', serif;
   font-size: 1.1rem;
   line-height: 1.8;
@@ -24,15 +24,19 @@
 }
 
 .list li {
-  color: #666;
+  color: #333;
   font-family: 'Noto Serif', serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8;
 }
 
 .main {
   text-align: center;
   font-family: 'Noto Serif', serif;
+}
+
+.img-link-container {
+  padding: 0.7rem 0;
 }
 
 .img {
@@ -59,7 +63,7 @@
 }
 
 .lightbox {
-  padding: 3rem;
+  padding: 2rem;
   z-index: 1;
   background-color: black;
   position: fixed;
@@ -71,7 +75,7 @@
 }
 
 .lightbox img {
-  padding: 2rem;
+  padding-bottom: 1rem;
   box-sizing: border-box;
 }
 

@@ -18,6 +18,20 @@
       href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css"
     />
     <link rel="stylesheet" href="./public/style.css" />
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      ;(function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0]
+        if (d.getElementById(id)) return
+        js = d.createElement(s)
+        js.id = id
+        js.src =
+          'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0'
+        fjs.parentNode.insertBefore(js, fjs)
+      })(document, 'script', 'facebook-jssdk')
+    </script>
   </head>
   <body id="body">
     <main class="main">
@@ -59,12 +73,18 @@
               <div class="fact">
                 <h2>Fakta</h2>
                 <ul class="list">
-                  <li>Byggår:</li>
-                  <li>Fastighetsbeteckning:</li>
-                  <li>Pris: 2 500 000:-</li>
+                  <li>Fastighetsbeteckning: <b>Berg Klövsjö 5:274</b></li>
+                  <li>Adress: <b>Klövsjövägen 47, Klövsjö</b></li>
+                  <li>Tomtareal: <b>2.199 m2</b></li>
+                  <li>Byggnadsår: <b>1979</b></li>
+                  <li>Utgångspris: <b>2 500 000:-</b></li>
                 </ul>
               </div>
-              Dela på facbook
+              Dela: facebook |
+              <a
+                href="mailto:?subject=Klövsjövägen 47, Klövsjö&amp;body=Hej,%0D%0DJag vill tipsa dig om en bostad som är till salu på Klövsjövägen 47, Klövsjö.%0DHär hittar du bostaden: https://www.tillsalu-klövsjö.se"
+                >e-post</a
+              >
             </div>
           </div>
         </div>
@@ -130,10 +150,12 @@
               </div>
             </div>
           </div>
-          <button id="open">Öppna alla bilder i lightbox</button>
-          <a href="public/bilder.html" target="__blank"
-            >Visa alla bilder i ny flik</a
-          >
+          <button id="open">Visa alla bilder i lightbox</button>
+          <div class="img-link-container">
+            <a href="public/bilder.html" target="__blank"
+              >Visa alla bilder i ny flik >></a
+            >
+          </div>
         </div>
 
         <div class="content-box">
