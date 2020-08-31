@@ -23,12 +23,12 @@
 .address {
   padding-left: 0.5rem;
   color: #555;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .paragraph {
   color: #555;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.8;
 }
 
@@ -43,7 +43,7 @@
 .list li,
 .list2 li {
   font-family: 'Noto Serif', serif;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.8;
 }
 
@@ -71,18 +71,9 @@
     font-size: 1.35rem;
   }
 
-  .paragraph {
-    font-size: 0.95rem;
-  }
-
   .fact {
     padding: 0.9rem;
     margin-bottom: 1rem;
-  }
-
-  .list li,
-  .list2 li {
-    font-size: 0.95rem;
   }
 
   .content-box {
