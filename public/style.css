@@ -1,42 +1,10 @@
-.main-heading {
-  margin: 0;
-  margin-bottom: 1rem;
-  padding: 2.5rem 0 0 1rem;
-  font-size: 3rem;
+.main {
+  text-align: center;
+  font-family: 'Noto Serif', serif;
 }
 
 .font {
   font-family: 'Noto Serif', serif;
-}
-
-.address {
-  padding-left: 1rem;
-  font-family: 'Noto Serif', serif;
-  color: #555;
-  font-size: 1.7rem;
-}
-
-.post-address {
-  padding-left: 1rem;
-  font-family: 'Noto Serif', serif;
-  color: #555;
-  font-size: 1.5rem;
-}
-
-.paragraph {
-  color: #555;
-  font-family: 'Noto Serif', serif;
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-.fact {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: cornsilk;
-  border: 1px solid #888;
-  font-family: 'Noto Serif', serif;
-  line-height: 1.8;
 }
 
 .list,
@@ -45,23 +13,115 @@
   list-style-type: none;
 }
 
+.main-heading {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  padding: 1.5rem 0 0 0.5rem;
+  font-size: 1.9rem;
+}
+
+.address {
+  padding-left: 0.5rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+.paragraph {
+  color: #555;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+.fact {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: cornsilk;
+  border: 1px solid #888;
+  line-height: 1.8;
+}
+
+.list li,
+.list2 li {
+  font-family: 'Noto Serif', serif;
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
 .list li {
   color: #333;
-  font-family: 'Noto Serif', serif;
-  font-size: 1rem;
-  line-height: 1.8;
 }
 
 .list2 li {
   color: #555;
-  font-family: 'Noto Serif', serif;
-  font-size: 1.1rem;
-  line-height: 1.8;
 }
 
-.main {
-  text-align: center;
-  font-family: 'Noto Serif', serif;
+.content-box {
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 35.5em) {
+  .main-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 0 0 1rem;
+  }
+
+  .address {
+    padding-left: 1rem;
+    font-size: 1.35rem;
+  }
+
+  .paragraph {
+    font-size: 0.95rem;
+  }
+
+  .fact {
+    padding: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .list li,
+  .list2 li {
+    font-size: 0.95rem;
+  }
+
+  .content-box {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .main-heading {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding: 2.5rem 0 0 1rem;
+  }
+
+  .address {
+    padding-left: 1rem;
+    font-size: 1.7rem;
+  }
+
+  .paragraph {
+    font-size: 1.1rem;
+  }
+
+  .fact {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .list li {
+    font-size: 1rem;
+  }
+
+  .list2 li {
+    font-size: 1.1rem;
+  }
+
+  .content-box {
+    padding: 1rem;
+  }
 }
 
 .img-link-container {
@@ -75,10 +135,6 @@
 
 .img-thumbnail-container {
   padding: 0.2rem;
-}
-
-.content-box {
-  padding: 1rem;
 }
 
 .container {
