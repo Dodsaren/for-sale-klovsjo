@@ -36,24 +36,14 @@
       href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css"
     />
     <link rel="stylesheet" href="./public/style.css" />
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-      ;(function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0]
-        if (d.getElementById(id)) return
-        js = d.createElement(s)
-        js.id = id
-        js.src =
-          'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0'
-        fjs.parentNode.insertBefore(js, fjs)
-      })(document, 'script', 'facebook-jssdk')
-    </script>
   </head>
   <body id="body">
     <main class="main">
-      <img class="img pure-img" src="./public/images/forsale-hero.jpg" alt="" />
+      <img
+        class="hero-img pure-img"
+        src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/forsale-hero.jpg"
+        alt=""
+      />
       <div class="container">
         <h1 class="main-heading">Fastighet till salu - Klövsjö</h1>
         <div class="pure-g">
@@ -70,11 +60,11 @@
               <p class="paragraph font">
                 Byggnaden består av bostadsytor och lokalytor fördelade på två
                 plan. Bostadsytan på övre plan utgörs av två sammansatta
-                lägenheter à 78,5 m2 med separata ingångar. Totalt fem sovrum,
-                två kök, två vardagsrum och två badrum.
+                lägenheter à 78,5 m2 med separata ingångar, varav den ena för
+                närvarande används som kontor.
               </p>
               <p class="paragraph font">
-                Nedre plan inbegriper affärslokaler om totalt 376 m2, takhöjd
+                Nedre plan innehåller affärslokaler om totalt 336 m2, takhöjd
                 2,70 m. Del av lokalerna för närvarande uthyrd.
               </p>
               <p class="paragraph font">
@@ -87,15 +77,30 @@
               <h3 class="font">Praktisk information/ tillträde mm</h3>
               <ul class="list2">
                 <li>Budgivning pågår under september månad 2020</li>
-                <li>Tillträde till bostad och lokaler(bv): <b>genast</b></li>
+                <li>Tillträde till bostad och lokaler(bv): genast</li>
                 <li>
-                  Tillträde till uthyrd lokaldel (ca 67 m2):
-                  <b>diskuteras med hyresgäst*)</b>
+                  Tillträde till uthyrd lokaldel (ca 67 m2): diskuteras med
+                  hyresgäst
                 </li>
+                <li>Tillträde till övriga lokaler: senast 1 nov 2020.</li>
+              </ul>
+              <h3 class="font">Visning/Öppet hus</h3>
+              <p class="paragraph font">
+                Lördag 12/9 och lördag 19/9 kl. 10-15
+              </p>
+              <h3 class="font">
+                För ytterligare upplysningar, budgivning och ytterligare visning
+              </h3>
+              <ul class="list2">
+                <li>Engmar Ekonomi AB</li>
+                <li>Sven-Åke Engmar</li>
+                <li>tel. <a href="tel:0703401012">070-3401012</a></li>
                 <li>
-                  Tillträde till övriga lokaler: <b>senast 1 nov 2020.</b>
+                  e-post:
+                  <a href="mailto:svenake@engmar.se">svenake@engmar.se</a>
                 </li>
               </ul>
+              <p class="paragraph font"></p>
             </div>
           </div>
           <div class="pure-u-1 pure-u-md-2-5">
@@ -105,36 +110,36 @@
                   <li>Fastighetsbeteckning: <b>Berg Klövsjö 5:274</b></li>
                   <li>Tomtareal: <b>2.199 m2</b></li>
                   <li>Byggnadsår: <b>1979</b></li>
-                  <li>Taxeringsvärde: <b>547 000:- (2019)</b></li>
+                  <li>Taxeringsv: <b>547 000:- (2019)</b></li>
                   <li>Byggnadsyta: <b>440 m2</b></li>
                   <li>Boyta: <b>157 m2</b></li>
                   <li>Affärslokalyta: <b>336 m2</b></li>
                   <li>Biyta: <b>ca. 130 m2</b></li>
-                  <li>Uppvärmning: <b>Bergvärme (2003)</b></li>
+                  <li>Uppvärmn: <b>Bergvärme (2003)</b></li>
                   <li>Energiåtgång uppv. <b>19 500 kWh/år</b></li>
                   <li>Vatten/avlopp: <b>Kommunalt VA</b></li>
-                  <li>Driftskostnad: <b>ca. 36 000:-/år</b></li>
+                  <li>Driftskostnad: <b>ca. 6 000:-/mån</b></li>
                   <li>Utgångspris: <b>2 500 000:-</b></li>
                 </ul>
               </div>
-              Dela: facebook |
+              <!-- Dela: facebook |
               <a
                 href="mailto:?subject=Klövsjövägen 47, Klövsjö&amp;body=Hej,%0D%0DJag vill tipsa dig om en bostad som är till salu på Klövsjövägen 47, Klövsjö.%0DHär hittar du bostaden: https://www.tillsalu-klövsjö.se"
                 >e-post</a
-              >
+              > -->
             </div>
           </div>
         </div>
 
-        <div class="content-box">
-          <h2>Bildgalleri</h2>
+        <div>
+          <h2 class="padder">Bildgalleri</h2>
           <img
-            class="pure-img"
+            class="pure-img img img-padder"
             src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1507.jpg"
             alt=""
           />
           <img
-            class="pure-img"
+            class="pure-img img img-padder"
             src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1528.jpg"
             alt=""
           />
@@ -156,8 +161,8 @@
                       <div class="img-thumbnail-container">
                         <img
                           class="img-thumbnail pure-img"
-                          src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1525.jpg"
                           alt=""
+                          src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1525.jpg"
                         />
                       </div>
                     </div>
@@ -196,53 +201,173 @@
                 </div>
               </div>
             </div>
+          </div>-->
+          <div class="padder2">
+            <button id="open">Visa fler bilder i lightbox</button>
+            <div class="img-link-container">
+              <a href="public/bilder.html" target="__blank"
+                >Visa fler bilder i ny flik >></a
+              >
+            </div>
           </div>
-          <button id="open">Visa alla bilder i lightbox</button>
+        </div>
+
+        <h2 class="padder">Ritningar</h2>
+        <img
+          class="pure-img img img-padder"
+          src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1558.jpg"
+          alt=""
+        />
+        <div class="pure-g">
+          <div class="pure-u-1 pure-u-md-1-2">
+            <img
+              class="pure-img img-padder left"
+              src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1548.jpg"
+              alt=""
+            />
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2">
+            <img
+              class="pure-img img-padder right"
+              src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1549.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="padder2">
+          <button id="open2">Visa alla ritningar i lightbox</button>
           <div class="img-link-container">
-            <a href="public/bilder.html" target="__blank"
-              >Visa alla bilder i ny flik >></a
+            <a href="public/ritningar.html" target="__blank"
+              >Visa alla ritningar i ny flik >></a
             >
-          </div> -->
-        </div>
-
-        <div class="content-box">
-          <h2>Dokument</h2>
-          <div>
-            <p>Dokument?</p>
           </div>
         </div>
 
-        <div class="content-box">
-          <h2>Karta</h2>
+        <div class="content-box s">
+          <h2>Område</h2>
           <div class="maps-container">
             <iframe
               class="maps-iframe"
               frameborder="0"
               style="border: 0"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCbaYNLtri4ny6JuyCcoDGoeBIw8Kgll0I
-    &q=place_id:ChIJ-f2yS4YXb0YR4XbUGRZPrOo&maptype=satellite"
+    &q=place_id:ChIJ-f2yS4YXb0YR4XbUGRZPrOo&maptype=satellite&zoom=15"
               allowfullscreen
             >
             </iframe>
           </div>
         </div>
 
+        <div class="content-box md">
+          <h2>Område</h2>
+          <div class="maps-container">
+            <iframe
+              class="maps-iframe"
+              frameborder="0"
+              style="border: 0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCbaYNLtri4ny6JuyCcoDGoeBIw8Kgll0I
+    &q=place_id:ChIJ-f2yS4YXb0YR4XbUGRZPrOo&maptype=satellite&zoom=15&center=62.523046,14.194063"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="last">
         <div class="content-box">
           <h2>Kontakt</h2>
-          <div>Kontakt</div>
+          <ul class="list3">
+            <li>Engmar Ekonomi AB</li>
+            <li>Sven-Åke Engmar</li>
+            <li>tel. <a href="tel:0703401012">070-3401012</a></li>
+            <li>
+              e-post:
+              <a href="mailto:svenake@engmar.se">svenake@engmar.se</a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div id="lightbox" class="lightbox dn">
-          <img class="pure-img" src="./public/images/forsale.jpg" alt="" />
-          <img class="pure-img" src="./public/images/forsale.jpg" alt="" />
-          <img class="pure-img" src="./public/images/forsale.jpg" alt="" />
-          <img class="pure-img" src="./public/images/forsale.jpg" alt="" />
-          <img class="pure-img" src="./public/images/forsale.jpg" alt="" />
-          <img class="pure-img" src="./public/images/forsale.jpg" alt="" />
-          <img class="pure-img" src="./public/images/forsale.jpg" alt="" />
-          <img class="pure-img" src="./public/images/forsale.jpg" alt="" />
-          <button id="close">Stäng</button>
+      <div id="lightbox" class="lightbox dn">
+        <div style="max-width: 1100px; margin: 0 auto">
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1569.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1565.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1563.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1592.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1585.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1525.jpg"
+            alt=""
+          />
         </div>
+        <button id="close">Stäng</button>
+      </div>
+
+      <div id="lightbox2" class="lightbox dn">
+        <div style="max-width: 1100px; margin: 0 auto">
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1558.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1548.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1549.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1551.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1552.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1553.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1560.jpg"
+            alt=""
+          />
+          <img
+            class="pure-img"
+            src="https://for-sale-klovsjo.s3.eu-north-1.amazonaws.com/IMG_1544.jpg"
+            alt=""
+          />
+        </div>
+        <button id="close2">Stäng</button>
       </div>
     </main>
   </body>

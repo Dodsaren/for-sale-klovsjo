@@ -6,9 +6,12 @@
 .font {
   font-family: 'Noto Serif', serif;
 }
-
+.last {
+  background-color: #f3f3f3;
+}
 .list,
-.list2 {
+.list2,
+.list3 {
   padding: 0;
   list-style-type: none;
 }
@@ -41,7 +44,24 @@
 }
 
 .content-box {
+  max-width: 1100px;
+  margin: auto;
+  box-sizing: border-box;
   padding: 0.5rem;
+  text-align: left;
+}
+
+.img-padder {
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.padder {
+  padding: 0 0.5rem;
+}
+
+.padder2 {
+  padding: 0 0.5rem 0.5rem 0.5rem;
 }
 
 .list li,
@@ -49,6 +69,13 @@
   font-family: 'Noto Serif', serif;
   font-size: 1rem;
   line-height: 1.8;
+}
+
+.list3 li {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #333;
 }
 
 .list li {
@@ -74,7 +101,58 @@
   border: 0;
 }
 
+.dn {
+  display: none;
+}
+
+.lightbox {
+  padding: 2rem;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: scroll;
+}
+
+.lightbox img {
+  padding-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+.lightbox button {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  margin: 0 auto;
+}
+
+.disable-body-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.md {
+  display: none;
+}
+
+.s {
+  display: block;
+}
+
 @media screen and (min-width: 35.5em) {
+  .md {
+    display: block;
+  }
+  .s {
+    display: none;
+  }
   .main-heading {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -95,8 +173,32 @@
     padding: 1rem;
   }
 
+  .img-padder {
+    padding: 0.5rem 1rem;
+  }
+
+  .left {
+    padding-right: 0.5rem;
+  }
+
+  .right {
+    padding-left: 0.5rem;
+  }
+
+  .padder {
+    padding: 0 1rem;
+  }
+
+  .padder2 {
+    padding: 0 1rem 1rem 1rem;
+  }
+
   .maps-container {
     padding-top: 56.25%;
+  }
+
+  .list3 li {
+    font-size: 1.35rem;
   }
 }
 
@@ -134,60 +236,31 @@
   }
 }
 
+@media screen and (min-width: 64em) {
+  .lightbox {
+    padding: 3rem;
+  }
+
+  .lightbox img {
+    padding-bottom: 2rem;
+  }
+
+  .lightbox button {
+    right: 2rem;
+  }
+}
+
 .img-link-container {
   padding: 0.7rem 0;
 }
 
-.img {
+.hero-img {
   max-height: 50rem;
   display: inline-block;
-}
-
-.img-thumbnail-container {
-  padding: 0.2rem;
 }
 
 .container {
   max-width: 1100px;
   margin: auto;
   text-align: left;
-}
-
-.dn {
-  display: none;
-}
-
-.lightbox {
-  padding: 2rem;
-  z-index: 1;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: scroll;
-}
-
-.lightbox img {
-  padding-bottom: 1rem;
-  box-sizing: border-box;
-}
-
-button {
-  padding: 0.5rem;
-}
-
-.lightbox button {
-  position: fixed;
-  left: 50%;
-  bottom: 20px;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-}
-
-.disable-body-scroll {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
 }
