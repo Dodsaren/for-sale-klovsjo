@@ -50,4 +50,63 @@ window.onload = function () {
     clearInterval(intervalHandler2)
     counter2 = 0
   })
+
+  document.getElementById('fb').addEventListener('click', function (e) {
+    e.preventDefault()
+    FB.ui(
+      {
+        method: 'share',
+        href: 'https://tillsalu-klövsjö.se',
+      },
+      function (response) {},
+    )
+  })
+
+  document.getElementById('copy').addEventListener('click', function (e) {
+    e.preventDefault()
+    var copyfdBck = document.getElementById('copied')
+    copyfdBck.classList.remove('dn')
+    setTimeout(function () {
+      copyfdBck.classList.add('dn')
+    }, 1000)
+    copyTextToClipboard('https://tillsalu-klövsjö.se')
+  })
+
+  function fallbackCopyTextToClipboard(text) {
+    var textArea = document.createElement('textarea')
+    textArea.value = text
+
+    // Avoid scrolling to bottom
+    textArea.style.top = '0'
+    textArea.style.left = '0'
+    textArea.style.position = 'fixed'
+
+    document.body.appendChild(textArea)
+    textArea.focus()
+    textArea.select()
+
+    try {
+      var successful = document.execCommand('copy')
+      var msg = successful ? 'successful' : 'unsuccessful'
+      console.log('Fallback: Copying text command was ' + msg)
+    } catch (err) {
+      console.error('Fallback: Oops, unable to copy', err)
+    }
+
+    document.body.removeChild(textArea)
+  }
+  function copyTextToClipboard(text) {
+    if (!navigator.clipboard) {
+      fallbackCopyTextToClipboard(text)
+      return
+    }
+    navigator.clipboard.writeText(text).then(
+      function () {
+        console.log('Async: Copying to clipboard was successful!')
+      },
+      function (err) {
+        console.error('Async: Could not copy text: ', err)
+      },
+    )
+  }
 }

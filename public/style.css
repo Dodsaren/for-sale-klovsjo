@@ -3,6 +3,38 @@
   font-family: 'Noto Serif', serif;
 }
 
+#fb,
+#copy {
+  text-decoration: underline;
+  color: rgb(0, 0, 238);
+}
+
+#fb:hover,
+#copy:hover {
+  cursor: pointer;
+}
+
+#fb:active,
+#copy:active {
+  color: rgb(255, 0, 0);
+}
+
+#copy {
+  position: relative;
+}
+
+.copied {
+  position: absolute;
+  box-sizing: border-box;
+  top: -1.7rem;
+  left: 0;
+  padding: 0.2rem;
+  color: #555;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px #555 solid;
+}
+
 .font {
   font-family: 'Noto Serif', serif;
 }

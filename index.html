@@ -23,7 +23,7 @@
     />
     <meta
       property="og:title"
-      content="Till salu: Klövsjövägen 47 / Torpvägen 1, Klövsjo"
+      content="Till salu: Klövsjövägen 47 / Torpvägen 1, Klövsjö"
     />
     <meta property="og:url" content="https://tillsalu-klovsjo.se" />
     <meta
@@ -63,6 +63,22 @@
     <link rel="canonical" href="https://tillsalu-klovsjo.se" />
   </head>
   <body id="body">
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: '3260046124076860',
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: 'v8.0',
+        })
+      }
+    </script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js"
+    ></script>
     <main class="main">
       <img
         class="hero-img pure-img"
@@ -104,10 +120,10 @@
               <p class="paragraph font">
                 Verkligt tillfälle för händig familj med framtidsplaner.
               </p>
-              <p class="paragraph font">Ugångspris: 2 500 000:-</p>
+              <p class="paragraph font">Utgångspris: 2 500 000:-</p>
               <h3 class="font">Praktisk information/ tillträde mm</h3>
               <ul class="list2">
-                <li>Budgivning pågår tom 25 september 2020</li>
+                <li>Budgivning pågår tom 2 oktober 2020</li>
                 <li>Tillträde till bostad och lokaler(bv): genast</li>
                 <li>
                   Tillträde till uthyrd lokaldel (ca 67 m2): diskuteras med
@@ -153,6 +169,19 @@
                   <li>Utgångspris: <b>2 500 000:-</b></li>
                 </ul>
               </div>
+              <div class="font">
+                Dela: <span role="button" id="fb">facebook</span> |
+                <a
+                  href="mailto:?subject=Klövsjövägen 47, Klövsjö&amp;body=Hej,%0D%0DJag vill tipsa dig om en bostad som är till salu på Klövsjövägen 47, Klövsjö.%0DHär hittar du bostaden: https://www.tillsalu-klövsjö.se"
+                  >e-post</a
+                >
+                |
+                <span role="button" id="copy"
+                  >kopiera länk<span id="copied" class="copied dn"
+                    >Kopierad till utklipp</span
+                  ></span
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -173,7 +202,10 @@
           <div class="padder2">
             <button id="open">Visa fler bilder i lightbox</button>
             <div class="img-link-container">
-              <a href="public/bilder.html" target="__blank"
+              <a
+                href="public/bilder.html"
+                target="__blank"
+                rel="noopener noreferrer"
                 >Visa fler bilder i ny flik >></a
               >
             </div>
@@ -205,10 +237,27 @@
         <div class="padder2">
           <button id="open2">Visa alla ritningar i lightbox</button>
           <div class="img-link-container">
-            <a href="public/ritningar.html" target="__blank"
+            <a
+              href="public/ritningar.html"
+              target="__blank"
+              rel="noopener noreferrer"
               >Visa alla ritningar i ny flik >></a
             >
           </div>
+        </div>
+
+        <div class="content-box">
+          <h2>Fastighetsinformation</h2>
+          <ul class="list2">
+            <li>
+              <a
+                href="https://d350i4w74gzcls.cloudfront.net/Berg%20Klo%CC%88vsjo%CC%88%205_274.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Lantmäteriet (PDF)</a
+              >
+            </li>
+          </ul>
         </div>
 
         <div class="content-box s">
@@ -259,61 +308,73 @@
       <div id="lightbox" class="lightbox dn">
         <div style="max-width: 1100px; margin: 0 auto">
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1569x.jpg"
             alt="Fasad snett framifrån"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1565x.jpg"
             alt="Fasad från sidan med väg 316 och busshållplats"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1563x.jpg"
             alt="Fasad framifrån med markiser nedfällda"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1592x.jpg"
             alt="Lokalyta bottenplan"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1585x.jpg"
             alt="Lokalyta bottenplan"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1579.jpg"
             alt="Bastu"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1525x.jpg"
             alt="Kök övre plan"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1526.jpg"
             alt="Kök övre plan"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1596.jpg"
             alt="Toalettrum övre plan"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1598.jpg"
             alt="Duschrum övre plan"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1599.jpg"
             alt="Badrum övre plan"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1578.jpg"
             alt="Toalettrum nedre plan"
@@ -325,41 +386,49 @@
       <div id="lightbox2" class="lightbox dn">
         <div style="max-width: 1100px; margin: 0 auto">
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1558x.jpg"
             alt="Planritning bottenplan efter tillbyggnader"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1548.jpg"
             alt="Planritning övre plan"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1549.jpg"
             alt="Planritning bottenplan, förrådsdel"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1551x.jpg"
             alt="Ritning, fasad söder"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1552x.jpg"
             alt="Ritning, fasad norr"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1553x.jpg"
             alt="Ritning, fasad framsida"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1560x.jpg"
             alt="Ritning, fasad öster"
           />
           <img
+            loading="lazy"
             class="pure-img"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1544x.jpg"
             alt="Nybyggnadskarta Klövsjöby 5:274"
