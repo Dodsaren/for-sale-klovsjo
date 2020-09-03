@@ -51,6 +51,12 @@ window.onload = function () {
     counter2 = 0
   })
 
+  document.getElementById('mail-share').addEventListener('click', function () {
+    window.gtag('event', 'Share', {
+      event_category: 'Email',
+    })
+  })
+
   document.getElementById('fb').addEventListener('click', function (e) {
     e.preventDefault()
     FB.ui(
@@ -60,6 +66,9 @@ window.onload = function () {
       },
       function (response) {},
     )
+    window.gtag('event', 'Share', {
+      event_category: 'Facebook',
+    })
   })
 
   document.getElementById('copy').addEventListener('click', function (e) {
@@ -70,6 +79,9 @@ window.onload = function () {
       copyfdBck.classList.add('dn')
     }, 1000)
     copyTextToClipboard('https://tillsalu-klövsjö.se')
+    window.gtag('event', 'Share', {
+      event_category: 'Copy link',
+    })
   })
 
   function fallbackCopyTextToClipboard(text) {
