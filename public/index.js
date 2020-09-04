@@ -59,13 +59,10 @@ window.onload = function () {
 
   document.getElementById('fb').addEventListener('click', function (e) {
     e.preventDefault()
-    FB.ui(
-      {
-        method: 'share',
-        href: 'https://tillsalu-klövsjö.se',
-      },
-      function (response) {},
-    )
+    FB.ui({
+      method: 'share',
+      href: 'https://tillsalu-klövsjö.se',
+    })
     window.gtag('event', 'Share', {
       event_category: 'Facebook',
     })
@@ -112,13 +109,6 @@ window.onload = function () {
       fallbackCopyTextToClipboard(text)
       return
     }
-    navigator.clipboard.writeText(text).then(
-      function () {
-        console.log('Async: Copying to clipboard was successful!')
-      },
-      function (err) {
-        console.error('Async: Could not copy text: ', err)
-      },
-    )
+    navigator.clipboard.writeText(text)
   }
 }
