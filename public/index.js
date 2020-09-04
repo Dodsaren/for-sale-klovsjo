@@ -55,7 +55,7 @@ window.onload = function () {
     e.preventDefault()
     FB.ui({
       method: 'share',
-      href: 'https://tillsalu-klövsjö.se',
+      href: 'https://tillsalu-klovsjo.se',
     })
     window.gtag('event', 'Share', {
       event_category: 'Facebook',
