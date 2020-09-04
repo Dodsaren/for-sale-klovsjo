@@ -9,9 +9,6 @@ window.onload = function () {
     document.getElementById('body').classList.add('disable-body-scroll')
     intervalHandler = setInterval(function () {
       counter += 1
-      window.gtag('event', 'Browsing', {
-        event_category: 'Lightbox image gallery',
-      })
     }, 1000)
   })
   document.getElementById('close').addEventListener('click', function () {
@@ -35,9 +32,6 @@ window.onload = function () {
     document.getElementById('body').classList.add('disable-body-scroll')
     intervalHandler2 = setInterval(function () {
       counter2 += 1
-      window.gtag('event', 'Browsing', {
-        event_category: 'Lightbox blueprint gallery',
-      })
     }, 1000)
   })
   document.getElementById('close2').addEventListener('click', function () {
