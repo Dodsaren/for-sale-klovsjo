@@ -69,7 +69,7 @@ window.onload = function () {
     setTimeout(function () {
       copyfdBck.classList.add('dn')
     }, 1000)
-    copyTextToClipboard('https://tillsalu-klövsjö.se')
+    copyTextToClipboard('https://tillsalu-klovsjo.se')
     window.gtag('event', 'Share', {
       event_category: 'Copy link',
     })
