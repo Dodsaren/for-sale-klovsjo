@@ -170,21 +170,7 @@ button {
   overflow: hidden;
 }
 
-.md {
-  display: none;
-}
-
-.s {
-  display: block;
-}
-
 @media screen and (min-width: 35.5em) {
-  .md {
-    display: block;
-  }
-  .s {
-    display: none;
-  }
   .main-heading {
     font-size: 2.5rem;
     margin-bottom: 1rem;
