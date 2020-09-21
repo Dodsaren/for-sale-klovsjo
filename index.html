@@ -80,11 +80,21 @@
       src="https://connect.facebook.net/en_US/sdk.js"
     ></script>
     <main class="main">
-      <img
-        class="hero-img pure-img"
-        src="https://d350i4w74gzcls.cloudfront.net/forsale-hero.jpg"
-        alt="Fasad"
-      />
+      <picture>
+        <source
+          media="(max-width: 35.5em)"
+          srcset="https://d350i4w74gzcls.cloudfront.net/forsale-herosmall.jpg"
+        />
+        <source
+          srcset="https://d350i4w74gzcls.cloudfront.net/forsale-hero.jpg"
+        />
+        <img
+          class="hero-img pure-img"
+          src="https://d350i4w74gzcls.cloudfront.net/forsale-hero.jpg"
+          alt="Fasad"
+        />
+      </picture>
+
       <div class="container">
         <h1 class="main-heading">Fastighet till salu - Klövsjö</h1>
         <div class="pure-g">
@@ -131,12 +141,8 @@
                 </li>
                 <li>Tillträde till övriga lokaler: senast 1 nov 2020.</li>
               </ul>
-              <h3 class="font">Visning/Öppet hus</h3>
-              <p class="paragraph font">
-                Lördag 12/9 och lördag 19/9 kl. 10-15
-              </p>
               <h3 class="font">
-                För ytterligare upplysningar, budgivning och ytterligare visning
+                För ytterligare upplysningar, budgivning och visning
               </h3>
               <ul class="list2">
                 <li>Engmar Ekonomi AB</li>
@@ -189,12 +195,22 @@
 
         <div>
           <h2 class="padder">Bildgalleri</h2>
-          <img
-            class="pure-img img img-padder"
-            src="https://d350i4w74gzcls.cloudfront.net/IMG_1507x.jpg"
-            alt="Fasad framsida"
-            loading="lazy"
-          />
+          <picture>
+            <source
+              media="(max-width: 35.5em)"
+              srcset="https://d350i4w74gzcls.cloudfront.net/IMG_1507small.jpg"
+            />
+            <source
+              srcset="https://d350i4w74gzcls.cloudfront.net/IMG_1507x.jpg"
+            />
+            <img
+              class="pure-img img img-padder"
+              src="https://d350i4w74gzcls.cloudfront.net/IMG_1507x.jpg"
+              alt="Fasad framsida"
+              loading="lazy"
+            />
+          </picture>
+
           <img
             class="pure-img img img-padder"
             src="https://d350i4w74gzcls.cloudfront.net/IMG_1528x.jpg"
